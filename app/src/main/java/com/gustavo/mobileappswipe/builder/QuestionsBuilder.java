@@ -18,9 +18,6 @@ public class QuestionsBuilder {
         questions.add(new Question("Qual é seu nome?", QuestionTypeEnum.SINGLE).addOption("Gustavo", false));
         questions.add(new Question("Qual é sua cidade", QuestionTypeEnum.SINGLE).addOption("Porto Alegre", false));
         questions.add(new Question("Qual é sua instituição de ensino nome?", QuestionTypeEnum.SINGLE).addOption("FADERGS", false));
-        questions.add(new Question("A cadeira deste trabalho é Desenvolvimento de Dispositivos Móveis", QuestionTypeEnum.MULTIPLE)
-                .addOption(OptionEnum.YES.getOption(), true)
-                .addOption(OptionEnum.NO.getOption(), false);
         questions.add(new Question("5 + 5 = 10?", QuestionTypeEnum.MULTIPLE)
                 .addOption(OptionEnum.YES.getOption(), true)
                 .addOption(OptionEnum.NO.getOption(), false)
