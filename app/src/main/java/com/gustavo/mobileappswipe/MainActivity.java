@@ -117,8 +117,12 @@ public class MainActivity extends AppCompatActivity {
      * Função para resetar o index das pergunras, caso o index estiver fora do tamanho da lista de perguntas
      */
     private void resetIndexIfOut() {
-        if (screenIndex > (questions.size() - 1) || screenIndex < (questions.size() - 1)) {
+        if (screenIndex > (questions.size() - 1) ) {
             screenIndex = 0;
+        }
+
+        if(screenIndex < 0){
+            screenIndex = (questions.size() - 1);
         }
     }
 
